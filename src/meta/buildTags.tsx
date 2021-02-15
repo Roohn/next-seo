@@ -27,7 +27,7 @@ const buildTags = (config: BuildTagsParams) => {
   } else if (config.defaultTitle) {
     updatedTitle = config.defaultTitle;
   }
-  
+
   if (updatedTitle) {
     tagsToRender.push(<title key="title">{updatedTitle}</title>);
   }

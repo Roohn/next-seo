@@ -303,7 +303,8 @@ it('displays defaultTitle when no title is provided', () => {
   const title = getByText(
     container,
     (content, element) =>
-      element.tagName.toLowerCase() === 'title' && content.startsWith(defaultTitle),
+      element.tagName.toLowerCase() === 'title' &&
+      content.startsWith(defaultTitle),
   );
   expect(title.innerHTML).toMatch(defaultTitle);
 });
